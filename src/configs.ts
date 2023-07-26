@@ -25,6 +25,7 @@ export enum ParaswapOnlyDex {
   Thena = "Thena,ThenaFusion",
   PancakeSwap = "PancakeSwap,PancakeSwapV2,PancakeswapV3",
   Chronos = "Chronos",
+  Dfyn = "Dfyn",
 }
 
 export enum OdosOnlyDex {
@@ -215,6 +216,15 @@ export const Configs = {
     exchangeAddress: "0x3dD428151c697Aa1a3E5d0ee6A52768E70D85daE",
     exchangeType: "ParaswapExchange",
     pathfinderKey: ParaswapOnlyDex.PancakeSwap,
+  } as Config,
+  Dfyn: {
+    ...ChainConfigs.poly,
+    name: "Dfyn",
+    partner: "Orbs:TWAP:Dfyn",
+    // TODO: get exchange address and type
+    exchangeAddress: "0x3dD428151c697Aa1a3E5d0ee6A52768E70D85daE",
+    exchangeType: "ParaswapExchange",
+    pathfinderKey: ParaswapOnlyDex.Dfyn,
   } as Config,
 };
 
